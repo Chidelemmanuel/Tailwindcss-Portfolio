@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="sm:scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,37 +7,82 @@
     <link rel="stylesheet" href="./build/output.css">
     <title>Learning Tailwind</title>
 </head>
-<body class="font-serif font-extrabold">
-    <nav class="text-center bg-orange-500 font-bold text-2xl h-25">
-        WELCOME TO MY PORTFOLIO DESIGNED WITH TAILWIND CSS
-    </nav>
 
-    <div class="home flex justify-between p-10 w-full">
-        <div class="image w-96 ">
-            <img src="./image/723.jpg" alt="">
-        </div> 
-        <div class="detail bg-white w-1/2 m-28">
+<body class=" min-h-screen m-0 p-0 box-border dark:bg-black dark:text-white">
 
-            <h3 class="text-[#980000] text-3xl">My name is</h3> 
+    <div class="font-serif font-extrabold flex-col items-center">
 
-            <h1 class="text-6xl mt-8">Ozochi Emmanuel</h1>
+        <header class="bg-slate-300 text-center font-bold text-xl w-full sticky top-0 z-10">
 
-            <p class="font-bold text-2xl font-serif mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam est aperiam aspernatur deleniti atque voluptate perspiciatis, consequatur voluptatibus neque deserunt asperiores illum quidem nemo consequuntur, repudiandae reprehenderit aut! Provident!</p>
+            <section class="max-w-4xl mx-auto p-2 flex justify-between space-x-2">
+                <span class="flex md: pt-3">
+                   <img src="./image/technologist Emoji.png" alt="" class="w-15 h-10">
+
+                   <h1 class="text-3xl pt-2">CHI<span class="text-red-800">DEL</span></h1>
+                </span>
+
+                <span>
+                    <button id="mobile-open-button" class="text-3xl focus:outline none pt-5 sm:hidden">
+                        &#9776 
+                    </button>
+                </span>
+
+                <nav class="text-center font-bold text-3xl w-full m-auto sticky p-5 space-x-12 sm:block hidden">
+                    <a href="#home">HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#contact">CONTACT US</a>
+                </nav>
+
+            </section>
+
+        </header>
+
+        <div class="bg-slate-400 text-xl items-center text-center p-4 w-full">
+            WELCOME TO MY PORTFOLIO DESIGNED WITH <span class="text-red-800">TAILWIND CSS</span>
         </div>
-    </div>
+        
+        <div id="home" class="flex flex-col items-center w-full p-2 justify-around my-10 scroll-mt-20 sm:flex md:flex-row">
+            <div>
+                <img src="./image/723.jpg" alt="" class=" w-96 p-2 rounded-3xl">
+            </div>
 
-    <div class="about flex justify-between p-10 w-full">
-        <div class="detail bg-white w-1/2 m-28">
+            <div class="bg-white mt-12 sm:w-1/2">
 
-            <h1 class="text-8xl text-[#980000] mt-8">About Us</h1>
+                <h3 class="text-[#980000] text-3xl text-center md: mt-1">My name is</h3>
 
-            <p class="font-bold font-serif mt-8 text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam est aperiam aspernatur deleniti atque voluptate perspiciatis, consequatur voluptatibus neque deserunt asperiores illum quidem nemo consequuntur, repudiandae reprehenderit aut! Provident!</p>
+                <h1 class="text-4xl mt-8 text-center md:text-6xl">Ozochi Emmanuel</h1>
+
+                <p class="font-bold text-xl text-[#2b2828] text-center font-serif m-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam est aperiam aspernatur deleniti atque voluptate perspiciatis, consequatur voluptatibus neque deserunt asperiores illum quidem nemo consequuntur, repudiandae reprehenderit aut! Provident!
+                </p>
+                
+            </div>
+
         </div>
 
-        <div class="image w-96 ">
-            <img src="./image/746.jpg" alt="">
-        </div> 
+        <hr class="bg-slate-700 w-1/2 h-1 mx-auto md:w-1/2">
+
+        <h1 class="block  text-[#980000] md:hidden text-4xl text-center mt-5">About Us</h1>
+
+        <div id="about" class="flex flex-col items-center w-full p-2 justify-around my-10 scroll-mt-32 sm:flex               md:flex-row-reverse">
+
+            <div>
+                <img src="./image/746.jpg" alt="" class=" w-96 p-2 rounded-3xl">
+            </div>
+
+            <div class="bg-white mt-0 sm:w-1/2">
+
+                <h1 class="text-[#980000] m-2 text-6xl text-center hidden md:block">About Us</h1>
+
+                <p class="font-bold text-2xl text-[#2b2828] text-center font-serif m-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam est aperiam aspernatur deleniti atque voluptate perspiciatis, consequatur voluptatibus neque deserunt asperiores illum quidem nemo consequuntur, repudiandae reprehenderit aut! Provident!
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- <hr class="bg-slate-700 w-1/2 h-1 mx-auto md:w-1/2"> -->
     </div>
 </body>
 </html>
-
